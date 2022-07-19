@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Automobile Industry Profile</title>
+        <title> &nbsp;&nbsp;Automobile Industry Profile</title>
         <link rel="icon" type="image/x-icon" href="tata_logo.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta charset="UTF-8">
@@ -12,32 +12,70 @@ nav {
 }
 div {
     border:5px solid black;
-    border-radius: 60px;
+    border-radius:60px;
+    background-image: url(background_img.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    width: 800px;
+    height: 650px;
+    padding: 20px;
+    margin-left:50px;
+
 }
-body {background-image: url(resources/background_img.jpeg);
+body {
     background-size:contain;
-    width:800px; height:800px;
     margin-left: 15%;
-
+    background:rgb(229, 125, 142);
 }
+#footer{
+    display:inline-block;
+    color:blueviolet;
+    padding-inline: 50px;
+    background-color: yellow;
+    text-shadow: 10px 10px 5px;
+}
+li{
+    display:inline-block;
+    color:red;
+    padding-inline: 50px;
+    background-color:white;
+    text-shadow: 5px 5px 3px;
 
+    
+}
 </style>
 
     </head>
 
 <body>
 
-    <nav>
+    <ol>
+        <li><a href="department.html" target="myframe"> Department</a></li>
+        <li><a href="management.html" target="myframe"> management</a></li>
+        <li><a href="product.html" target="myframe"> Products </a></li>
+        <li><a href="contact_us.html" target="myframe">Contact us</a></li>
+    </ol>
+
+    <!-- <nav>
         <a href="department.html" target="myframe"> Department</a>&nbsp;&nbsp;|&nbsp;&nbsp;
         <a href="management.html" target="myframe"> management</a>&nbsp;&nbsp;|&nbsp;&nbsp;
         <a href="product.html" target="myframe"> Products </a>&nbsp;&nbsp;|&nbsp;&nbsp;
         <a href="contact_us.html" target="myframe">Contact us</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-    </nav>
+    </nav> -->
     <br>
     <div>
-        <iframe width="800px" height="800px" name="myframe" src="department.html"></iframe>
+        <iframe width="800px" height="600px" name="myframe" src="department.html"></iframe>
     </div>
-    
+    <footer>
+    <ul><b>Follow us:</b>
+    <li><i id="footer" class="fa fa-facebook-official" aria-hidden="true"></i></li>
+    <li> <i id="footer" class="fa fa-linkedin" aria-hidden="true"></i></li> 
+<li><i id="footer" class="fa fa-twitter" aria-hidden="true"></i> </li>
+<li><i id="footer"class="fa fa-instagram" aria-hidden="true"></i></li>
+<li><i id="footer"class="fa fa-envelope" aria-hidden="true"></i></li>
+</ul>
+</footer>
 </body>
 
 
